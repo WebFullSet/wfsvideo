@@ -1,0 +1,238 @@
+:root {
+  --w-blue-color:#8729FF;
+  --w-blue-color-h:#6C1ECE;
+  --w-dark-blue-color:#1C1130;
+  --w-pink:#ff00ff;
+  --w-bg:#151722;
+  --w-text-color:#72778F;
+  --w-title-color:#ffffff;
+  --w-border-color:#72778F;
+  --w-border-color-h:var(--w-blue-color);
+  --w-container-p: 0 20px;
+  --w-bg-box:#22232F;
+  --w-ff:24px;
+  --w-fl:34px;
+  --w-ffh1:34px;
+  --w-flh1:44px;
+  --w-th:0.2s;
+  --w-br:12px;
+  --w-mbh1:20px;
+  --w-video-box: calc(50% - 16px);
+  --w-play-bg:var(--w-blue-color);
+  --w-play-i:var(--w-title-color);
+  --w-play-bg-h:var(--w-blue-color-h);
+  --w-play-i-h:var(--w-title-color);
+  --w-bg-button:var(--w-blue-color);
+  --w-color-button:#ffffff;
+  --w-bg-button-h:var(--w-blue-color-h);
+  --w-color-button-h:#ffffff;
+  --w-br-button:12px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --w-ff:28px;
+    --w-fl:38px;
+    --w-ffh1:44px;
+    --w-flh1:64px;
+    --w-mbh1:30px;
+    --w-container-p:0 30px;
+    --w-video-box: calc(25% - 16px);
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --w-ff:32px;
+    --w-fl:48px;
+    --w-ffh1:64px;
+    --w-flh1:80px;
+    --w-mbh1:50px;
+    --w-container-p:0 50px;
+  }
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  display: block;
+  min-height: 100%;
+  color: var(--w-text-color);
+  background-color: var(--w-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+a {
+  color: var(--w-pink);
+}
+a:hover {
+  text-decoration: none;
+}
+
+.pink {
+  color: var(--w-pink);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: var(--w-ffh1);
+  line-height: var(--w-flh1);
+  text-align: center;
+  nav-down: var(--w-mbh1);
+  color: var(--w-title-color);
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--w-ff);
+  line-height: var(--w-fl);
+  text-align: center;
+  nav-down: var(--w-mbh1);
+  color: var(--w-title-color);
+}
+
+.small-title {
+  color: var(--w-title-color);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0 0 50px;
+}
+#header .logo-wfs {
+  max-width: 200px;
+}
+#header .logo-wfs img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 0 0 0 20px;
+}
+#header .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wfsv-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--w-container-p);
+  box-sizing: border-box;
+}
+
+.wfsv-list-video {
+  margin: 0 -8px 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 16px);
+}
+.wfsv-list-video li {
+  width: var(--w-video-box);
+  box-sizing: border-box;
+  margin: 0 8px 16px;
+}
+.wfsv-list-video .wfsv-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--w-border-color);
+  border-radius: var(--w-br);
+  transition: all var(--w-th) ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.wfsv-list-video .wfsv-link:hover {
+  border-color: var(--w-border-color-h);
+}
+.wfsv-list-video .wfsv-link:hover rect {
+  fill: var(--w-play-bg-h);
+}
+.wfsv-list-video .wfsv-link:hover path {
+  stroke: var(--w-play-i-h);
+}
+.wfsv-list-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.wfsv-list-video .holder-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
+}
+.wfsv-list-video rect {
+  fill: var(--w-play-bg);
+  transition: fill var(--w-th) ease-in-out;
+}
+.wfsv-list-video path {
+  stroke: var(--w-play-i-h);
+  transition: stroke var(--w-th) ease-in-out;
+}
+
+.wfsv-list {
+  padding: 0;
+  margin: 0;
+}
+.wfsv-list li {
+  margin-bottom: 10px;
+}
+
+#footer {
+  padding: 20px 0;
+}
+#footer p {
+  text-align: center;
+  margin: 0;
+}
+
+.wfsv-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 40px;
+  background: var(--w-bg-button);
+  color: var(--w-color-button);
+  border-radius: var(--w-br-button);
+  transition: all var(--w-th) ease-in-out;
+  text-decoration: none;
+}
+.wfsv-button:hover {
+  background: var(--w-bg-button-h);
+  color: var(--w-color-button-h);
+}
+
+.list-exemple {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-exemple li {
+  margin: 0 20px 20px;
+}
+/*# sourceMappingURL=../maps/main.css.map */

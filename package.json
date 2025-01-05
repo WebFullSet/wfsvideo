@@ -1,0 +1,33 @@
+{
+  "name": "@webfullset/wfsvideo",
+  "version": "1.0.0",
+  "description": "WFSvideo is a lightweight and versatile JS plugin designed to seamlessly integrate video playback into your website",
+  "main": "wfsvideo.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebFullSet/wfsvideo.git"
+  },
+  "keywords": [
+  "webfullset",
+  "components",
+  "video",
+  "ui",
+  "frontend",
+  "javascript",
+  "gallery"],
+  "author": "WebFullSet (Roman Kharchenko) <infowebfullset@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebFullSet/wfsvideo/issues"
+  },
+  "homepage": "https://github.com/WebFullSet/wfsvideo#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "@webfullset/wfsvideo": "1.0.0"
+  }
+}
