@@ -1,6 +1,6 @@
 {
   "name": "@webfullset/wfsvideo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WFSvideo is a lightweight and versatile JS plugin designed to seamlessly integrate video playback into your website",
   "main": "wfsvideo.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@webfullset/wfsvideo": "1.0.0"
+    "@webfullset/wfsvideo": "1.0.1"
   }
 }
